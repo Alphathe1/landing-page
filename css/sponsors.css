@@ -2,35 +2,62 @@
   width: 100%;
   margin: 3rem 0;
   padding: 6rem 0;
-  overflow: hidden;
   position: relative;
 }
+
 #sponsors .banner {
   width: 100%;
 }
+
 #sponsors .banner-container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 5rem;
   padding: 2rem 0;
+}
+
+#sponsors .banner-container li {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 #sponsors .banner-container img {
   max-width: 100%;
   height: auto;
 }
+
 #banner-1 {
   background-color: var(--primary-color);
   transform: rotateZ(-3deg);
 }
+
+#banner-1 img {
+  filter: invert(1);
+}
+
 #banner-2 {
   background-color: rgba(110, 105, 105, 0.1);
   backdrop-filter: blur(5px);
   transform: rotateZ(3deg);
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 0;
+  z-index: 4;
 }
-#banner-1 img {
-  filter: invert(1);
+#banner-1 .banner-container {
+  animation: tape-loop 10s linear infinite;
+}
+#banner-2 .banner-container {
+  animation: tape-loop 10s linear infinite reverse;
+}
+
+/* animation */
+@keyframes tape-loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
