@@ -1,0 +1,38 @@
+#companies .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.logo-companies ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2.5rem 0;
+}
+.logo-companies img {
+  display: flex;
+  flex-shrink: 0;
+}
+.logo-companies li {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border: 2rem solid var(--secondary-color);
+  border-radius: 15.439rem;
+  background-color: var(--secondary-color);
+  transition: all 200ms ease-in;
+}
+
+.logo-companies li:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.logo-companies ul li.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}

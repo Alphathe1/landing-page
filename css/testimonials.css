@@ -1,0 +1,113 @@
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.testi-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.group {
+  display: inline-block;
+  position: relative;
+}
+
+.group-2 img {
+  position: absolute;
+}
+
+#girl-1 {
+  top: 21px;
+  right: 26px;
+}
+
+#girl-2 {
+  top: 12px;
+  left: 24px;
+}
+
+#girl-3 {
+  bottom: 25px;
+  right: 17px;
+}
+
+#girl-4 {
+  bottom: 44px;
+  left: 1px;
+}
+
+#ellipse {
+  top: 113px;
+  right: 104px;
+}
+
+#guill {
+  top: 172px;
+  right: 79px;
+}
+
+.left-right {
+  display: flex;
+  justify-content: space-between;
+  gap: 186px;
+}
+
+.avis img {
+  width: 31px;
+  height: 31px;
+}
+
+.avis {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.five-star {
+  display: flex;
+  gap: 7.95px;
+}
+
+.avis p {
+  width: 610px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 24px;
+  font-style: bold;
+}
+
+.skip {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skip .btn-small {
+  width: 62.73px;
+  height: 59px;
+  margin: 5px;
+  position: relative;
+}
+
+.small-arrow-left,
+.small-arrow-right {
+  width: 125%;
+  height: 125%;
+  position: absolute;
+}
+
+.small-arrow-left {
+  top: -10px;
+  right: -5px;
+}
+
+.small-arrow-right {
+  top: -10px;
+  left: -5px;
+}
